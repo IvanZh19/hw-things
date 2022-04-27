@@ -31,3 +31,5 @@ public static void main(String[] args) {
         }
         myCommand.end(false);
 }
+
+}
