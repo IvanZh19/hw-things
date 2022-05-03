@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+class Main {
+
+  private static Scanner myScanner = new Scanner(System.in);
+
+  public static void main(String[] args) {
+    System.out.println("put in a number");
+    double number = myScanner.nextDouble();
+
+
+    if (number%3==0 && number%5==0 && number!=0) {
+     System.out.println("fizz buzz");
+
+    }
+    else if (number%3==0 && number!=0) {
+      System.out.println("fizz");
+
+    }
+    else if (number%5==0 &&number!=0) {
+      System.out.println("buzz");
+
+    }
+
+    else {
+          System.out.println(number);
+
+    }
+  }
+}
