@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Main {
+
+  public static Scanner myScanner = new Scanner(System.in);
+  
+  public static void main(String[] args) {
+    System.out.println("How many fibonacci numbers do you want");
+    int number = myScanner.nextInt();
+      int beforenumber= 0;
+      int thisnumber = 1;
+      int nextnumber = 1;
+
+      System.out.println(beforenumber);
+      System.out.println(thisnumber);
+
+    
+    for (int i=1; i<=number; i++) {
+      
+      System.out.println(nextnumber);
+      beforenumber = thisnumber;
+      thisnumber = nextnumber;
+      nextnumber = beforenumber+thisnumber;
+    }
+
+    
+  }
+}
