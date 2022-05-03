@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+class Main {
+
+  public static Scanner myScanner = new Scanner(System.in);
+  
+  public static void main(String[] args) {
+    System.out.println("quadratic ax^2+bx+c");
+    System.out.println("input a");
+    double a = myScanner.nextDouble();
+    System.out.println("input b");
+    double b = myScanner.nextDouble();
+    System.out.println("input c");
+    double c = myScanner.nextDouble();    
+
+    double firstx = (-b+(Math.sqrt((b*b)-(4*a*c))))/(2*a);
+    double secondx = (-b-(Math.sqrt((b*b)-(4*a*c))))/(2*a);
+
+    System.out.println("first solution: " + firstx);
+    System.out.println("second solution: " + secondx);
+    
+  }
+}
