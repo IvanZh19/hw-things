@@ -1,0 +1,24 @@
+comeHome(){ parallel command
+knockOnDoor();
+WaitUntil(Door.open);
+}
+
+dinnerTime(){ race command
+eatDinner();
+makeSmallTalk();
+}
+
+goTo(Places.upstairs);
+
+showerTime(){ parallel command
+shower();
+playMusic();
+WaitUntil(Myself.clean);
+}
+
+procrastinate(){ parallel command
+scrollOnPhone();
+WaitUntil(Myself.existentialDread > 100);
+}
+
+doHomework();
